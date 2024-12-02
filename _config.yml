@@ -1,12 +1,17 @@
 # Site settings
 title: Cahill's Judo
-email: cahillsjudoacademy@gmail.com
+email:
+phone: (650) 589-0724
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 twitter_username:
 github_username:
+instagram_username: cahills.judo
+facebook_username: CahillsJudo
+free_trial_url: "https://cahillsjudo.pushpress.com/open/subscribe/a3ce"
+contact_form_url: "https://cahillsjudo.pushpress.com/open/interested"
 
 # Build settings
 markdown: kramdown
