@@ -52,7 +52,7 @@ p {
 }
 
 .text-faded {
-    color: rgba(white, .7);
+    color: rgba($theme-dark, .7);
 }
 
 section {
@@ -67,13 +67,14 @@ aside {
     padding: 0;
 }
 
-// Navigation
-
+// Independent Navigation Styling
 .navbar-default {
     background-color: white;
-    border-color: rgba($theme-dark, .5);
+    border-color: rgba($theme-yellow, .5);
     @include sans-serif-font;
     @include transition-all;
+
+    // Header branding
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
@@ -84,6 +85,8 @@ aside {
             color: darken($theme-primary, 10%);
         }
     }
+
+    // Navigation links
     .nav {
         > li {
             > a,
@@ -108,9 +111,12 @@ aside {
             }
         }
     }
+
+    // Media query adjustments
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: rgba($theme-yellow, .3);
+
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
@@ -118,6 +124,7 @@ aside {
                 color: white;
             }
         }
+
         .nav > li > a,
         .nav > li > a:focus {
             color: rgba(white, .7);
@@ -125,9 +132,11 @@ aside {
                 color: white;
             }
         }
+
         &.affix {
             background-color: white;
             border-color: rgba($theme-dark, .5);
+
             .navbar-header .navbar-brand {
                 color: $theme-primary;
                 font-size: 14px;
@@ -136,6 +145,7 @@ aside {
                     color: darken($theme-primary, 10%);
                 }
             }
+
             .nav > li > a,
             .nav > li > a:focus {
                 color: $theme-dark;
@@ -147,6 +157,57 @@ aside {
     }
 }
 
+.navbar-static {
+    background-color: white;
+    border-color: rgba($theme-yellow, .5);
+    @include sans-serif-font;
+    @include transition-all;
+
+    .navbar-header .navbar-brand {
+        color: $theme-primary;
+        @include sans-serif-font;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover,
+        &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+
+    .nav > li > a,
+    .nav > li > a:focus {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        color: $theme-dark;
+        &:hover {
+            color: $theme-primary;
+        }
+    }
+
+    @media (min-width: 768px) {
+        background-color: white; // No transparent background
+        border-color: rgba($theme-yellow, .3);
+
+        .navbar-header .navbar-brand {
+            color: $theme-primary;
+            &:hover,
+            &:focus {
+                color: darken($theme-primary, 10%);
+            }
+        }
+
+        .nav > li > a,
+        .nav > li > a:focus {
+            color: $theme-dark;
+            &:hover {
+                color: $theme-primary;
+            }
+        }
+    }
+}
+
+
 // Homepage Header
 
 header {
@@ -155,7 +216,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/temp-header.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -205,6 +266,8 @@ header {
     }
 }
 
+
+
 // Sections
 
 .section-heading {
@@ -228,10 +291,10 @@ header {
     max-width: 650px;
     margin: 0 auto;
     .portfolio-box-caption {
-        color: white;
+        color: rgba( $theme-dark, .7 );
         opacity: 0;
         display: block;
-        background: rgba( $theme-primary, .9 );
+        background: rgba( $theme-yellow, .9 );
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -349,3 +412,34 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+#map {
+    padding: 0px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 15px; /* Space between the image and text */
+  margin-bottom: 15px; /* Space below the image */
+  max-width: 300px; /* Optional: Set a maximum width for the image */
+  height: auto; /* Ensure aspect ratio is maintained */
+}
+
+.description {
+    padding-bottom: 2rem;
+}
+
+#navbar-icon {
+    height: 20px; /* Adjust the size of the icon */
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Adds spacing between the icon and the text */
+    display: inline-block; /* Ensures the icon stays inline with the text */
+}
+
+.navbar-brand {
+    display: inline-flex; /* Ensures the icon and text are on the same line */
+    align-items: center; /* Vertically centers the text and icon */
+}
+
+.pop-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
