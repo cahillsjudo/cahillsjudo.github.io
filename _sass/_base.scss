@@ -446,21 +446,21 @@ body {
 
 #logos .row {
     display: flex;
-    justify-content: center; /* Keeps logos centered */
+    justify-content: flex-end; /* Align logos to the right */
     align-items: center;
-    gap: 20px; /* Adjusts space between logos */
+    gap: 20px; /* Adjust space between logos */
 }
 
 #logos .col-lg-2, #logos .col-md-3, #logos .col-sm-4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 150px; /* Optional: Set a specific max width for logos */
-    padding: 10px; /* Adjust padding to reduce spacing further */
+    max-width: 80px; /* Optional: Set a specific max width for logos */
+    padding: 10px; /* Adjust padding as needed */
 }
 
 .logo {
-    height: 50px; /* Set your desired height */
+    height: 60px; /* Set the desired height */
     object-fit: contain; /* Maintains aspect ratio */
     width: auto; /* Adjusts width to maintain aspect ratio */
 }
