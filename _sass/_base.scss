@@ -443,3 +443,24 @@ body {
 .pop-text {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+#logos .row {
+    display: flex;
+    justify-content: center; /* Keeps logos centered */
+    align-items: center;
+    gap: 20px; /* Adjusts space between logos */
+}
+
+#logos .col-lg-2, #logos .col-md-3, #logos .col-sm-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px; /* Optional: Set a specific max width for logos */
+    padding: 10px; /* Adjust padding to reduce spacing further */
+}
+
+.logo {
+    height: 150px; /* Set your desired height */
+    object-fit: contain; /* Maintains aspect ratio */
+    width: auto; /* Adjusts width to maintain aspect ratio */
+}
