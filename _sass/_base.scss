@@ -348,8 +348,13 @@ header {
 
 .portfolio-item {
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally (optional) */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.portfolio-item img {
+    padding: 10px;
 }
 
 
