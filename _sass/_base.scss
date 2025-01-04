@@ -341,6 +341,18 @@ header {
     }
 }
 
+.row.no-gutter {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally (optional) */
+}
+
+
 .call-to-action {
     h2 {
         margin: 0 auto 20px;
