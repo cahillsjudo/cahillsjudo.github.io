@@ -466,13 +466,16 @@ body {
 }
 
 /* For displaying logo above header */
-.cahill-logo {
-    max-width: 100px; /* Adjust the size as needed */
-    height: auto;
+.about-section-header {
+    display: flex;
+    align-items: center;  /* Vertically align logo and text */
+    justify-content: center;  /* Center the logo and text horizontally */
 }
 
-.d-flex {
-    gap: 15px; /* Adjust spacing between logo and text */
+.cahill-logo {
+    max-width: 150px;  /* Adjust the logo size */
+    height: auto;  /* Maintain aspect ratio */
+    margin-right: 20px;  /* Add space between logo and text */
 }
 
 @media (min-width: 992px) {
