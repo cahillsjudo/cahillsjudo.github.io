@@ -11,6 +11,19 @@ Most of the website's content is stored in the following locations:
 
 You do not need to edit directories like `css/` or `fonts/` unless you are making design changes.
 
+## How to Edit Content
+
+1. Click the "Edit" button (pencil icon) in the top-right of the file view.
+2. Make your changes using the text editor.
+3. Scroll down and write a short description of your changes in the "Commit changes" box.
+4. Make sure "Commit directly to the main branch" is selected.
+5. Click "Commit changes" to save your edits.
+
+Changes will go live automatically.
+
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/6f9995c5-4f1c-4af6-9b74-eb0f3491d434" />
+
+
 ## Run Locally
 This isn't necessary for small edits. This is most likely to be used by someone who frequently codes. This is just if you want to see a temporary copy of the site on your personal computer, without the edits showing in the live page. 
 
