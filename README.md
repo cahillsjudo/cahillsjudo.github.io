@@ -2,8 +2,15 @@
 
 A website for Cahill's Judo. Uses a Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
 
+## Where to Find Content
+Most of the website's content is stored in the following locations:
+
+* `img/` – This folder contains images used on the website. Upload new images here.
+* `_layouts/front.html` – This file controls the main layout of the homepage. The "building blocks" for the layout are found in `_includes/`
+* `_includes/` – This folder contains reusable sections of the website, such as the header, footer, and navigation.
+
 ## Run Locally
-This isn't necessary for small edits. This is just if you want to see a temporary copy of the site on your personal computer, without the edits showing in the live page.
+This isn't necessary for small edits. This is most likely to be used by someone who frequently codes. This is just if you want to see a temporary copy of the site on your personal computer, without the edits showing in the live page. 
 
 1. Download Docker
 
