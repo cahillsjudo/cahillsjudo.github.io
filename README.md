@@ -9,6 +9,8 @@ Most of the website's content is stored in the following locations:
 * `_layouts/front.html` – This file controls the main layout of the homepage. The "building blocks" for the layout are found in `_includes/`
 * `_includes/` – This folder contains reusable sections of the website, such as the header, footer, and navigation.
 
+You do not need to edit directories like `css/` or `fonts/` unless you are making design changes.
+
 ## Run Locally
 This isn't necessary for small edits. This is most likely to be used by someone who frequently codes. This is just if you want to see a temporary copy of the site on your personal computer, without the edits showing in the live page. 
 
