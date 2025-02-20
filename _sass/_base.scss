@@ -453,7 +453,8 @@ body {
 }
 
 .pop-text {
-    text-shadow: 5px 5px 10px rgba($theme-primary, 0.8);
+    text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.8),  
+         2px 2px 0px rgba(0, 0, 0, 0.8);
 }
 
 #logos .row {
