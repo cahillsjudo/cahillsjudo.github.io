@@ -455,7 +455,7 @@ body {
 .pop-text {
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
   color: white;                        /* make text white for contrast */
-  padding: 1rem;                       /* space inside the background box */
+  padding: 0.25rem;                       /* space inside the background box */
   border-radius: 10px;                 /* optional: rounded corners */
   display: inline-block;               /* so the background hugs the text */
 }
