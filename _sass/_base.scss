@@ -453,9 +453,11 @@ body {
 }
 
 .pop-text {
-    color: white; /* Main text color */
-    -webkit-text-stroke: 0.5px black; /* Creates a sharp black outline */
-    text-shadow: none; /* Removes soft shadow */
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  color: white;                        /* make text white for contrast */
+  padding: 1rem;                       /* space inside the background box */
+  border-radius: 10px;                 /* optional: rounded corners */
+  display: inline-block;               /* so the background hugs the text */
 }
 
 #logos .row {
